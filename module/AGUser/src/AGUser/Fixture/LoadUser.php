@@ -6,7 +6,7 @@ use Doctrine\Common\DataFixtures\AbstractFixture,
 
 use AGUser\Entity\User;
 
-class LoadUser extends \Doctrine\Common\DataFixtures\AbstractFixture
+class LoadUser extends AbstractFixture
 {   
     public function load(ObjectManager $manager)
     {
