@@ -6,7 +6,7 @@ return array(
     'router' => array(
         'routes' => array(
             'aguser-register' => array(
-                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'type' => 'Literal',
                 'options' => array(
                     'route' => '/register',
                     'defaults' => array(
@@ -48,11 +48,11 @@ return array(
             'orm_default' => array(
                 'drivers' => array(
                     __NAMESPACE__ . '\Entity' => __NAMESPACE__ . '_driver'
-                ),
-            ),
+                )
+            )
         ),
-    ),
-    'data-fixture' => array(
-        'AGUser_fixture' => __DIR__ . '/../src/AGUser/Fixture',
+        'fixture' => array(
+            'AGUser_fixture' => __DIR__ . '/../src/AGUser/Fixture',
+        )
     ),
 );
